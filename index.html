@@ -79,7 +79,7 @@
         <div class="col-md-11 col-lg-8">
           <div class="row start-xs">
             <div class="col-xs-12 mbl"><img src="/images/logo-light.svg" width="80" height="80">
-              <p class="p--large light op-6">The perfect way kickstart your ionic project.</p>
+              <p class="p--large light op-6">The perfect way to kickstart your ionic project.</p>
             </div>
             <div class="col-xs-12 mb">
               <h2 class="h2--small light">Save time</h2>
@@ -106,13 +106,13 @@
       </div>
     </div>
   </div>
-  <div class="layout layout--split-right full-sm">
+  <div class="layout layout--split-right full-sm" id="pages">
     <div class="layout layout--header bdb bd-grey-light">
       <div class="container">
         <div class="row middle-xs">
           <div class="col-xs-12">
             <div class="input input--round input--icon-left"><i class="icon-search"></i>
-              <input type="search" placeholder="Search pages">
+              <input class="search" type="search" placeholder="Search page" id="search">
             </div>
           </div>
         </div>
@@ -127,61 +127,33 @@
         </div>
       </div>
       <div class="container">
-        <div class="row pv">
+        <div class="row pv list">
           <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 mbl">
             <div class="hovcp hovs acts show-modal" data-modal="identification">
               <div class="image bd bd-grey-light br image--app" style="background-image:url(./images/pages/identification.png)"></div>
             </div>
-            <div class="mt">
-              <div class="button button--grey-light button--round button--tiny mrt mbt">identification
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">login
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">signup
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">form
-              </div>
+            <div class="mt tags" data-tags="[&quot;identification&quot;,&quot;login&quot;,&quot;signup&quot;,&quot;form&quot;]"><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="identification">identification</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="login">login</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="signup">signup</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="form">form</a>
             </div>
           </div>
           <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 mbl">
             <div class="hovcp hovs acts show-modal" data-modal="messages">
               <div class="image bd bd-grey-light br image--app" style="background-image:url(./images/pages/messages.png)"></div>
             </div>
-            <div class="mt">
-              <div class="button button--grey-light button--round button--tiny mrt mbt">message
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">messenger
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">facebook
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">chat
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">profil
-              </div>
+            <div class="mt tags" data-tags="[&quot;message&quot;,&quot;messenger&quot;,&quot;facebook&quot;,&quot;chat&quot;,&quot;profile&quot;]"><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="message">message</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="messenger">messenger</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="facebook">facebook</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="chat">chat</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="profile">profile</a>
             </div>
           </div>
           <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 mbl">
             <div class="hovcp hovs acts show-modal" data-modal="microblogging">
               <div class="image bd bd-grey-light br image--app" style="background-image:url(./images/pages/microblogging.png)"></div>
             </div>
-            <div class="mt">
-              <div class="button button--grey-light button--round button--tiny mrt mbt">twitter
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">post
-              </div>
+            <div class="mt tags" data-tags="[&quot;twitter&quot;,&quot;post&quot;]"><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="twitter">twitter</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="post">post</a>
             </div>
           </div>
           <div class="col-xs-6 col-sm-4 col-md-6 col-lg-4 mbl">
             <div class="hovcp hovs acts show-modal" data-modal="profile">
               <div class="image bd bd-grey-light br image--app" style="background-image:url(./images/pages/profile.png)"></div>
             </div>
-            <div class="mt">
-              <div class="button button--grey-light button--round button--tiny mrt mbt">profile
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">avatar
-              </div>
-              <div class="button button--grey-light button--round button--tiny mrt mbt">form
-              </div>
+            <div class="mt tags" data-tags="[&quot;profile&quot;,&quot;avatar&quot;,&quot;form&quot;]"><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="profile">profile</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="avatar">avatar</a><a class="tag button button--grey-light button--round button--tiny mrt mbt hovcp hovs acts" data-value="form">form</a>
             </div>
           </div>
         </div>
@@ -189,4 +161,11 @@
     </div>
   </div>
   <script src="./scripts/main.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+  <script>var options = {
+  valueNames: [ { attr: 'data-tags', name: 'tags' } ]
+};
+var pageList = new List('pages', options);
+
+  </script>
 </body></html>
